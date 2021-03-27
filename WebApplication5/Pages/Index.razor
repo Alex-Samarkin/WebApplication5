@@ -1,0 +1,16 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<hr />
+
+<PersonC Person="@p"></PersonC>
+
+@code
+{
+    Person p = new Person() {Id = 1, Surname = "Иванов", Name = "Иван", Middlename = "Иванович", Passport = "1234-456789", Phone = "8-921-123-45-45"};
+}

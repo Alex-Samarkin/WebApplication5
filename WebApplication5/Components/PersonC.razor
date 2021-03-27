@@ -1,0 +1,22 @@
+﻿<div class="card" style="width: 50%">
+    <div class="card-header">
+        <span class="card-title" style="small">@Person.Id</span>
+        <span class="card-title">@Person.Surname</span>
+        <span class="card-subtitle">@Person.Name @Person.Middlename</span>
+    </div>
+    <div class="card-body">
+        <img src="Img/осьминог.png" class="card-img-bottom" alt="...">
+        <span class="card-text">Номер паспорта: @Person.Passport</span>
+        <span class="card-text">Телефон: @Person.Phone</span>
+    </div>
+    <div class="card-footer">
+        @Person.BirthDate
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public Person Person { get; set; } = new Person();
+
+}
